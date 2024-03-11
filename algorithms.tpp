@@ -22,7 +22,7 @@ ListType<T> transform(ListType<T> & iterable, F & func){
     ListType<T> output(iterable.getLength());
     
     typename ListType<T>::Iterator init = iterable.begin();
-    typename ListType<T>::Iterator outit = ouput.begin();
+    typename ListType<T>::Iterator outit = output.begin();
     
     while(!init.isAtEnd() && !outit.isAtEnd()){
         outit.get() = func(init.get());
